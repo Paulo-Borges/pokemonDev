@@ -179,13 +179,44 @@ const renderPokemon8 = async (pokemon) => {
 
 renderPokemon8(5)
 
+//
+//var mostrarCards = document.getElementById('cards')
+
+
+//function mostrarCardsNaTela() {
+//    mostrarCards.innerHTML = `
+//    <div class="cards">
+//        <img class="img_cards" src="#" alt="" />
+//
+//        <div>
+//          <div class="movie">
+//            <h2 class="name_title"></h2>
+//            <p class="number_title">Nº:</p>
+//          </div>
+//          <div class="premiacao">
+//            <p class="url">2 premios e 5 premiacoes</p>
+//          </div>
+//          <div class="valores">
+//            <div>
+//              <p class="bold">Apelido</p>
+//              <span class="apelido">$94m</span>
+//            </div>
+//            <div>
+//              <p class="bold">Peso</p>
+//              <span class="peso">$984m</span>
+//            </div>
+//          </div>
+//        </div>
+//      </div>
+//    
+//    `
+//}
 
 
 const exibirPokemon = async (pokemon) => {
     const data = await fetchPokemon(pokemon)
 
     favorito.innerHTML = data.name
-    
 
 }
 
